@@ -9,8 +9,20 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @SpringBootApplication
 public class JwtDemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JwtDemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JwtDemoApplication.class, args);
+    }
+
+
+    // send GET request to http://localhost:8080/test to see a 401
+
+    // send POST request to http://localhost:8080/token with this JSON to receive JWT
+
+//	{
+//		"username": "Jstewart",
+//		"password": "password"
+//	}
+
+    // send GET request to http://localhost:8080/test with the JWT from the previous request under the authorization tab (Bearer Token) to see protected resource
 
 }
